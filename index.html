@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17251e">
+  <meta name="description" content="Discover M.O.D. The Cabana Cafe in Sector 10, Faridabad. Explore the cabana experience and enquire about your special celebration.">
+  <title>M.O.D. The Cabana Cafe | Faridabad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#17251e;--green2:#263b30;--cream:#f5f0e6;--gold:#c7a56a;--ink:#20251f;--muted:#6e746d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none} img{display:block;width:100%;object-fit:cover}
+    .topbar{background:#101a15;color:#e8dfce;text-align:center;padding:9px 16px;font-size:12px;letter-spacing:.12em}
+    header{position:absolute;z-index:5;top:38px;left:0;width:100%;padding:22px 6%;display:flex;align-items:center;justify-content:space-between;color:#fff}
+    .brand{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:.12em}.brand small{display:block;font:10px "DM Sans",sans-serif;letter-spacing:.34em;color:#e2c58f;margin-top:4px}
+    nav{display:flex;gap:28px;font-size:13px} nav a{opacity:.9} nav a:hover{color:#e2c58f}
+    .navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#172018;padding:13px 21px;border-radius:2px;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .hero{min-height:690px;height:92vh;max-height:850px;position:relative;display:flex;align-items:center;background:linear-gradient(90deg,rgba(10,18,13,.78),rgba(10,18,13,.35),rgba(10,18,13,.12)),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85") center/cover}
+    .hero-content{padding:130px 8% 70px;color:white;max-width:780px}.eyebrow{color:#e2c58f;letter-spacing:.25em;text-transform:uppercase;font-size:11px;font-weight:700}
+    h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500} h1{font-size:clamp(48px,7vw,88px);line-height:1.02;margin:20px 0} .hero p{font-size:16px;line-height:1.8;color:#eee8dd;max-width:510px;margin-bottom:30px}
+    .outline{display:inline-flex;border:1px solid rgba(255,255,255,.7);padding:13px 21px;margin-left:10px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .intro{padding:100px 8%;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro img{height:500px}
+    .section-copy h2{font-size:clamp(34px,4vw,54px);line-height:1.12;margin:14px 0 22px}.section-copy p{line-height:1.9;color:var(--muted);font-size:15px}
+    .tagline{font-family:"Playfair Display",serif;font-style:italic;color:#98764a;font-size:20px;margin-top:24px}
+    .experience{background:var(--green);color:var(--cream);padding:90px 8%}.center{text-align:center;max-width:700px;margin:0 auto 45px}.center p{color:#c6c9c0;line-height:1.8}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#22352a}.card img{height:250px}.card div{padding:24px}.card h3{font-size:25px;margin:0 0 10px}.card p{color:#c6c9c0;font-size:13px;line-height:1.8;margin:0}
+    .menu{padding:100px 8%;display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;align-items:center}.menu img{height:530px}.menu-list{border-top:1px solid #d8d0c2;margin-top:30px}.menu-row{padding:17px 0;border-bottom:1px solid #d8d0c2;display:flex;justify-content:space-between;gap:15px}.menu-row span:last-child{font-size:12px;color:#98764a}
+    .celebrate{padding:100px 8%;background:#e9e1d2;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.celebrate img{height:450px}.celebrate ul{padding-left:18px;color:var(--muted);line-height:2}
+    .gallery{padding:90px 6%}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}.gallery-grid img{height:100%}.gallery-grid img:first-child{grid-row:span 2}
+    .visit{background:var(--green);color:var(--cream);padding:85px 8%;display:grid;grid-template-columns:1fr 1fr;gap:60px}.visit p{color:#c6c9c0;line-height:1.8}.visit .detail{padding:17px 0;border-bottom:1px solid #536256}.visit .detail strong{display:block;color:#e2c58f;font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+    footer{background:#101a15;color:#bfc4ba;padding:25px 8%;display:flex;justify-content:space-between;gap:20px;font-size:12px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:10;background:#1d9b58;color:white;padding:14px 18px;border-radius:30px;font-size:13px;font-weight:700;box-shadow:0 5px 20px #0003}
+    @media(max-width:800px){header{padding:18px 5%}nav{display:none}.hero{min-height:650px;height:85vh}.hero-content{padding:120px 7% 60px}.intro,.menu,.celebrate,.visit{grid-template-columns:1fr;gap:35px;padding:70px 7%}.intro img,.menu img,.celebrate img{height:350px}.cards{grid-template-columns:1fr}.card img{height:260px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 190px 190px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}footer{flex-direction:column}.outline{margin:12px 0 0}}
+  </style>
+</head>
+<body>
+  <div class="topbar">A CABANA ESCAPE IN THE HEART OF FARIDABAD</div>
+  <header>
+    <a class="brand" href="#home">M.O.D.<small>THE CABANA CAFE</small></a>
+    <nav><a href="#story">OUR STORY</a><a href="#experience">THE EXPERIENCE</a><a href="#menu">MENU</a><a href="#celebrations">CELEBRATIONS</a><a href="#visit">FIND US</a></nav>
+    <a class="navbtn" href="https://wa.me/918860831829?text=Hello%20M.O.D.%20The%20Cabana%20Cafe%2C%20I%27d%20like%20to%20enquire%20about%20a%20reservation." target="_blank" rel="noopener">Enquire now</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">More than a cafe · A place to make memories</div>
+        <h1>Your little<br>escape awaits.</h1>
+        <p>Slow moments, cosy cabanas and memorable get-togethers. Come for the ambience, stay for the moments that matter.</p>
+        <a class="btn" href="https://wa.me/918860831829?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20a%20cabana%20booking." target="_blank" rel="noopener">Plan your visit</a>
+        <a class="outline" href="#experience">Explore the cafe</a>
+      </div>
+    </section>
+
+    <section class="intro" id="story">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1100&q=85" alt="Warmly lit cafe interior" onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1100&q=85'">
+      <div class="section-copy">
+        <div class="eyebrow">Welcome to M.O.D.</div>
+        <h2>Little moments.<br>Beautiful memories.</h2>
+        <p>Step away from the everyday and settle into a space made for good conversations, relaxed evenings and special celebrations. Whether it is a catch-up with friends or a moment worth celebrating, make it yours at M.O.D. The Cabana Cafe.</p>
+        <div class="tagline">Come as you are. Leave with a story.</div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="center"><div class="eyebrow">The M.O.D. experience</div><h2 style="font-size:48px;margin:14px 0">A setting for every mood</h2><p>Find your corner, gather your favourite people and make an ordinary day feel a little more special.</p></div>
+      <div class="cards">
+        <article class="card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Cosy cafe seating"><div><h3>Cosy cabana vibes</h3><p>A relaxed setting for conversations, date nights and slow evenings.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Celebration table decor"><div><h3>Celebrate together</h3><p>Make birthdays, anniversaries and special surprises feel memorable.</p></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Coffee being served"><div><h3>Cafe favourites</h3><p>Take a break, enjoy a coffee and spend quality time with your people.</p></div></article>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1100&q=85" alt="Freshly prepared cafe pizza">
+      <div class="section-copy">
+        <div class="eyebrow">A little something delicious</div><h2>Good food.<br>Good company.</h2>
+        <p>Explore cafe-style favourites and ask our team for the latest menu and availability.</p>
+        <div class="menu-list">
+          <div class="menu-row"><strong>Pizza & savoury bites</strong><span>Ask for today's menu</span></div>
+          <div class="menu-row"><strong>Sandwiches</strong><span>Ask for today's menu</span></div>
+          <div class="menu-row"><strong>Coffee & beverages</strong><span>Ask for today's menu</span></div>
+          <div class="menu-row"><strong>Snacks & treats</strong><span>Ask for today's menu</span></div>
+        </div>
+        <p style="font-size:12px">Menu categories are indicative. Please confirm available dishes and prices directly with the cafe.</p>
+        <a class="btn" href="https://wa.me/918860831829?text=Hello%2C%20could%20you%20please%20share%20your%20latest%20menu%3F" target="_blank" rel="noopener">Ask for the menu</a>
+      </div>
+    </section>
+
+    <section class="celebrate" id="celebrations">
+      <div class="section-copy"><div class="eyebrow">Make it a moment</div><h2>Your celebration,<br>your way.</h2>
+        <p>Planning a birthday, anniversary, proposal or a get-together? Get in touch with the cafe to discuss cabana availability and celebration arrangements.</p>
+        <ul><li>Birthday surprises</li><li>Anniversary moments</li><li>Romantic date setups</li><li>Friends and family get-togethers</li></ul>
+        <a class="btn" href="https://wa.me/918860831829?text=Hello%20M.O.D.%2C%20I%27m%20planning%20a%20special%20celebration.%20Could%20you%20share%20the%20available%20options%3F" target="_blank" rel="noopener">Enquire about celebrations</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1100&q=85" alt="Elegant celebration table setup">
+    </section>
+
+    <section class="gallery">
+      <div class="center"><div class="eyebrow">A glimpse of the good times</div><h2 style="font-size:46px;margin:14px 0">Moments at M.O.D.</h2><p>Replace these sample visuals with the cafe's own photos before publishing the final business website.</p></div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Cafe dining atmosphere">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=700&q=80" alt="Restaurant interior">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Coffee">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=700&q=80" alt="Cafe food">
+        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=80" alt="Celebration table">
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div><div class="eyebrow">Come find your cabana</div><h2 style="font-size:48px;margin:14px 0">We'd love to see you.</h2><p>Visit us in Sector 10 DLF, Faridabad. For reservations, cabana availability, menu and current opening hours, please contact the cafe directly.</p>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=11%2C12%20Pocket%20D1%2C%20Sector%2010%20DLF%2C%20Faridabad%2C%20Haryana%20121006" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div>
+        <div class="detail"><strong>Address</strong>11–12, Pocket D1, D2-10, Diving Road, beside Spicy Tadka, Sector 10 DLF, Faridabad, Haryana 121006</div>
+        <div class="detail"><strong>Call / WhatsApp</strong><a href="tel:+918860831829">+91 88608 31829</a></div>
+        <div class="detail"><strong>Instagram</strong><a href="https://www.instagram.com/m.o.d_thecabanacafe/" target="_blank" rel="noopener">@m.o.d_thecabanacafe ↗</a></div>
+        <div class="detail"><strong>Opening hours</strong>Please confirm today's timings directly with the cafe.</div>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> M.O.D. The Cabana Cafe · Faridabad</span><span>Made with care · Demo website concept</span></footer>
+  <a class="float" href="https://wa.me/918860831829?text=Hello%20M.O.D.%20The%20Cabana%20Cafe" target="_blank" rel="noopener">WhatsApp us ↗</a>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
